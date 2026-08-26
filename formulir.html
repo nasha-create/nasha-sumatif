@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulir Pendaftaran</title>
+	<style>
+		body { font-family: Arial, sans-serif; background-color: #FFFFFF; padding: 25px; color: #333333; }
+		h2 { color: #0B6E4F; border-bottom: 2px solid #0B6E4F; padding-bottom: 8px; }
+		label { font-weight: bold; display: block; margin-top: 12px; }
+		input[type="text"], input[type="email"], input[type="date"], select {
+			width: 100%;
+			max-width: 400px;
+			padding: 8px;
+			margin-top: 4px;
+			border: 1px solid #0B6E4F;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type="submit"], input[type="reset"] {
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #0B6E4F;
+			color: #ffffff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+		input[type="reset"] {
+			background-color: #999999;
+		}
+	</style>
+</head>
+<body>
+	<h2>Formulir Pendaftaran Siswa Baru</h2>
+	<form action="https://formspree.io/f/ganti-dengan-kode-kamu" method="POST">
+		<label>Nama Lengkap</label>
+		<input type="text" name="nama_lengkap" required>
+
+		<label>Tempat, Tanggal Lahir</label>
+		<input type="text" name="ttl" placeholder="contoh: Serpong, 5 Mei 2011" required>
+
+		<label>Asal Sekolah</label>
+		<input type="text" name="asal_sekolah" required>
+
+		<label>Jenis Kelamin</label>
+		<select name="jenis_kelamin">
+			<option value="Laki-laki">Laki-laki</option>
+			<option value="Perempuan">Perempuan</option>
+		</select>
+
+		<label>Nama Orang Tua/Wali</label>
+		<input type="text" name="nama_ortu" required>
+
+		<label>Nomor HP/WhatsApp</label>
+		<input type="text" name="no_hp" required>
+
+		<label>Email Aktif</label>
+		<input type="email" name="email" required>
+
+		<label>Alamat Lengkap</label>
+		<input type="text" name="alamat" required>
+
+		<br>
+		<input type="submit" value="Daftar Sekarang">
+		<input type="reset" value="Hapus">
+	</form>
+</body>
+</html>
